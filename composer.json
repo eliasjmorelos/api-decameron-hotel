@@ -33,6 +33,9 @@
         }
     },
     "scripts": {
+        "start": "php artisan serve --host=0.0.0.0 --port=10000",
+        "build": "composer install && php artisan migrate --force",
+        "migrate": "php artisan migrate --seed",
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
