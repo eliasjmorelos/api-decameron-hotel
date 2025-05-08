@@ -41,7 +41,7 @@ EXPOSE 8000
 
 
 # Comando de seeder
-RUN php artisan migrate --seed
+RUN php artisan migrate --seed --force
 
 
 # Comando de inicio
