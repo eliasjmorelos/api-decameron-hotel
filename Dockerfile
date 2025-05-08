@@ -39,11 +39,6 @@ RUN chown -R www-data:www-data /var/www \
 # Puerto expuesto
 EXPOSE 8000
 
-
-# Comando de seeder
-RUN php artisan migrate --seed --force
-
-
 # Comando de inicio
 CMD php artisan serve --host=0.0.0.0 --port=8000
 
